@@ -12,7 +12,7 @@ class App < Sinatra::Base
         end
 
         get '/new' do
-            erb :'/puppy/create_puppy'
+            erb :create_puppy
         end
 
 end
