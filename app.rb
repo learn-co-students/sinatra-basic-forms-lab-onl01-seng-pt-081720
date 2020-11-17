@@ -11,8 +11,7 @@ class App < Sinatra::Base
     end
 
     post '/puppy' do
-        @puppy = Puppy.new(name: name, breed: breed, age: age)
-
+        @puppy = Puppy.new(name: params[:name], breed: params[:breed], age: params[:age])
         erb :display_puppy
     end
 
